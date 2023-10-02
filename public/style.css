@@ -1,11 +1,17 @@
 @font-face {
-    font-family: LatoBold;
-    src: url(fonts/Lato/Lato-Bold.ttf);
+    font-family: VT323;
+    src: url(fonts/VT323/VT323-Regular.ttf);
 }
 
-@font-face {
+/* @font-face {
     font-family: LatoRegular;
     src: url(fonts/Lato/Lato-Regular.ttf);
+} */
+body{
+    font-family: VT323 !important;
+    background-color: black !important;
+    color: white !important;
+    font-size: calc(1rem + 0.9vw) !important;
 }
 
 .navbar_color{
@@ -16,11 +22,31 @@
     color: rgb(170, 224, 242) !important;
 }
 .title {
-    font-family: LatoBold;
+    font-size: calc(1.5rem + 1.5vw);
+}
+.nav-title {
     font-size: calc(1.5rem + 1vw);
+    color: rgb(255, 255, 255);
 }
 
 .nav-text {
-    font-family: LatoRegular;
     font-size: calc(0.75rem + 1vw);
+}
+.data{
+    color: rgb(120, 136, 255) !important;
+}
+.data-text{
+    color: rgb(177, 203, 244) !important;
+}
+.software{
+    color: orange;
+}
+.software-text{
+    color: rgb(244, 204, 131);
+}
+.volunteer{
+    color: rgb(43, 186, 43);
+}
+.volunteer-text{
+    color: rgb(193, 245, 193);
 }

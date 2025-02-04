@@ -1,0 +1,91 @@
+/* Font Face Declaration */
+@font-face {
+    font-family: 'VT323';
+    src: url('../assets/fonts/VT323/VT323-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Global styles */
+body {
+    background-color: #1a1a1a;
+    color: white;
+    font-family: 'VT323', monospace;
+}
+
+/* Navigation */
+.navbar {
+    padding: 1rem 0;
+}
+
+.nav-title {
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* Section styles */
+.Title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Data Analytics section */
+.data {
+    color: #00A6FB;
+}
+
+.data-text {
+    color: #00A6FB;
+}
+
+/* Software Development section */
+.software {
+    color: #51D88A;
+}
+
+.software-text {
+    color: #51D88A;
+}
+
+/* Volunteering section */
+.volunteer {
+    color: #F66B0E;
+}
+
+.volunteer-text {
+    color: #F66B0E;
+}
+
+/* Links and hover effects */
+.nav-link:hover {
+    opacity: 0.8;
+}
+
+/* Profile section */
+.profile-section {
+    padding: 4rem 0;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 2rem auto;
+}
+
+/* Animation delays */
+[data-aos] {
+    transition-duration: 800ms;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .Title {
+        font-size: 2rem;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+}

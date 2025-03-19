@@ -1,0 +1,207 @@
+/* Font imports */
+@font-face {
+  font-family: 'VT323';
+  src: url('./fonts/VT323/VT323-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* VSCode Dark Theme Colors 
+  Main color references:
+  - Background: #1E1E1E (main editor bg)
+  - Text: #D4D4D4 (default text)
+  - Keywords: #569CD6 (blue)
+  - Strings: #CE9178 (orange/salmon)
+  - Functions: #DCDCAA (light yellow)
+  - Variables: #9CDCFE (light blue)
+  - Types: #4EC9B0 (teal)
+  - Comments: #6A9955 (green)
+  - Constants: #4FC1FF (bright blue)
+  - Class names: #4EC9B0 (teal)
+  - Parameters: #9CDCFE (light blue)
+*/
+
+/* Update App.css with these VSCode colors */
+
+body {
+  font-family: 'VT323', monospace !important;
+  background-color: #1E1E1E !important; /* VSCode main background */
+  color: #D4D4D4 !important; /* VSCode default text color */
+  font-size: calc(1rem + 0.9vw) !important;
+}
+
+/* Main title styling - using VSCode function color */
+.Title {
+  font-size: calc(2rem + 1.5vw);
+  margin-bottom: 1.5rem;
+  color: #DCDCAA; /* VSCode function color (light yellow) */
+}
+
+/* About Me title - using VSCode comment color */
+.about-me-title {
+  color: #4FC1FF; /* VSCode return color (purple) */
+}
+
+/* Navigation styles */
+.nav-title {
+  font-size: calc(1.5rem + 1vw);
+  color: #4EC9B0; /* VSCode bright blue for constants */
+}
+
+.nav-text {
+  font-size: calc(0.75rem + 1vw);
+}
+
+/* Categories styling */
+.data {
+  color: #4FC1FF !important; /* VSCode keyword blue */
+}
+
+.data-text {
+  color: #9CDCFE !important; /* VSCode variable light blue */
+}
+
+.software {
+  color: #CE9178 !important; /* VSCode string orange/salmon */
+}
+
+.software-text {
+  color: #CE9178 !important; /* Lighter version of software */
+}
+
+/* Profile section styling */
+.about-card {
+  background-color: #252526; /* VSCode sidebar background */
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border: 1px solid #333333; /* VSCode border color */
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-image {
+  width: 80%;
+  max-width: 250px;
+  height: auto;
+  border: 3px solid #333333; /* VSCode border color */
+}
+
+.profile-name {
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: #4EC9B0;
+}
+
+/* Social icons styling */
+.social-icons-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.social-icon {
+  color: #D4D4D4; /* Default text color */
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-icon:hover {
+  color: #4FC1FF; /* VSCode bright blue */
+  transform: scale(1.2);
+}
+
+/* Text content styling */
+.about-text {
+  padding: 1rem;
+  font-size: calc(0.9rem + 0.5vw);
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+  color: #D4D4D4; /* VSCode default text color */
+}
+
+/* Highlight different parts of the text with VSCode colors */
+.highlight-keyword {
+  color: #569CD6; /* VSCode keyword blue */
+}
+
+.highlight-type {
+  color: #4EC9B0; /* VSCode type teal */
+}
+
+.highlight-string {
+  color: #CE9178; /* VSCode string orange */
+}
+
+.highlight-function {
+  color: #DCDCAA; /* VSCode function yellow */
+}
+
+.highlight-variable {
+  color: #9CDCFE; /* VSCode variable light blue */
+}
+
+/* Navbar styling */
+.navbar.navbar-dark {
+  background-color: #252526 !important; /* VSCode darker background */
+}
+
+hr {
+  background-color: #333333; /* VSCode separator color */
+  opacity: 0.8;
+}
+
+.download-btn {
+  background-color: #0E639C; /* VSCode blue button color */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 28px; /* Larger padding */
+  font-size: 1.9rem; /* Larger font size */
+  transition: all 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem 0; /* More vertical spacing */
+}
+
+.download-btn:hover {
+  background-color: #1177bb; /* Slightly lighter blue on hover */
+  color: white;
+  transform: translateY(-2px); /* Slight upward movement on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+}
+
+.download-btn .btn-icon {
+  font-size: 1.5rem; /* Larger icon */
+  color: white;
+  margin-right: 12px; /* More space between icon and text */
+}
+
+.download-btn .btn-text {
+  font-weight: 500; /* Slightly bolder text */
+  color: white;
+}
+
+.pdf-container {
+  background-color: #252526; /* VSCode sidebar background */
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border: 1px solid #333333; /* VSCode border color */
+  margin-bottom: 2rem; /* Add some bottom margin */
+}
+
+.resume-pdf {
+  border: none;
+  height: 1000px; /* Increased from 800px to 1000px */
+  width: 100%;
+}

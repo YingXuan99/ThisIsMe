@@ -24,7 +24,7 @@
 /* Update App.css with these VSCode colors */
 
 body {
-  font-family: 'VT323', monospace !important;
+  font-family: Consolas, 'Courier New', monospace !important;
   background-color: #1E1E1E !important; /* VSCode main background */
   color: #D4D4D4 !important; /* VSCode default text color */
   font-size: calc(1rem + 0.9vw) !important;
@@ -102,12 +102,13 @@ body {
 .social-icons-container {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 1.3rem;
   margin-top: 1rem;
 }
 
 .social-icon {
   color: #D4D4D4; /* Default text color */
+  font-size: 1.2rem;
   transition: color 0.3s, transform 0.3s;
 }
 
@@ -119,7 +120,7 @@ body {
 /* Text content styling */
 .about-text {
   padding: 1rem;
-  font-size: calc(0.9rem + 0.5vw);
+  font-size: calc(0.9rem + 0.4vw);
 }
 
 .about-text p {
@@ -159,23 +160,22 @@ hr {
 }
 
 .download-btn {
-  background-color: #0E639C; /* VSCode blue button color */
+  background-color: #525455 !important; /* VSCode blue button color */
   color: white;
   border: none;
   border-radius: 6px;
   padding: 12px 28px; /* Larger padding */
-  font-size: 1.9rem; /* Larger font size */
+  font-size: 1.3rem !important; /* Larger font size */
   transition: all 0.3s;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 1.5rem 0; /* More vertical spacing */
+  margin: 1.0rem 0; /* More vertical spacing */
 }
 
 .download-btn:hover {
-  background-color: #1177bb; /* Slightly lighter blue on hover */
-  color: white;
+  background-color: #1177bb !important;
   transform: translateY(-2px); /* Slight upward movement on hover */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
 }
@@ -204,4 +204,118 @@ hr {
   border: none;
   height: 1000px; /* Increased from 800px to 1000px */
   width: 100%;
+}
+
+/* Project page subtitle */
+.project-subtitle {
+  color: #D4D4D4;
+  font-size: calc(0.9rem + 0.3vw);
+  margin-bottom: 2rem;
+}
+
+/* Project card styling */
+.project-card {
+  background-color: #252526;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border: 1px solid #333333;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Project image container and styling */
+.project-image-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #1E1E1E;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.05);
+}
+
+/* Project content styling */
+.project-content {
+  padding: 1.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-title {
+  color: #4EC9B0; /* VSCode type teal color */
+  font-size: calc(1.2rem + 0.5vw);
+  margin-bottom: 1rem;
+}
+
+.project-description {
+  color: #D4D4D4;
+  font-size: calc(0.8rem + 0.2vw);
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+/* Tech stack badges */
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tech-badge {
+  background-color: #2D2D2D;
+  color: #9CDCFE; /* VSCode variable light blue */
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  border: 1px solid #3E3E3E;
+}
+
+/* Project links */
+.project-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-link {
+  color: #DCDCAA; /* VSCode function yellow */
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.project-link:hover {
+  color: #4FC1FF; /* VSCode bright blue */
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+  .project-image-container {
+    height: 200px;
+  }
+  
+  .project-content {
+    padding: 1rem;
+  }
 }

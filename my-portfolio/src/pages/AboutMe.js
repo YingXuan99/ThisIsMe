@@ -27,7 +27,7 @@ function AboutMe() {
                                         className="profile-image rounded-circle"
                                         alt="Profile"
                                     />
-                                    <div className="mt-3">
+                                    <div className="mt-1">
                                         <h2 className="profile-name">Ying Xuan</h2>
                                         <div className="social-icons-container">
                                             <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="social-icon">
@@ -75,11 +75,6 @@ function AboutMe() {
                                         Outside of tech, I enjoy <span className="highlight-string">staying active with martial arts</span> and spending time
                                         with loved ones. I'm eager to apply my skills to tackle new and meaningful
                                         problems
-                                    </p>
-
-                                    <p>
-                                        This website provides insights into the projects I have worked on and
-                                        hopefully allows you to <span className="highlight-string">get to know me better</span>.
                                     </p>
                                 </div>
                             </div>

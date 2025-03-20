@@ -19,9 +19,9 @@ function Resume() {
 
     return (
         <div className="container mt-4">
-            <div className="row mb-4">
+            <div className="row mb-2">
                 <div className="col-12 text-center">
-                    <h1 className="Title">My Resume</h1>
+                    <h1 className="Title software">My Resume</h1>
                 </div>
             </div>
 

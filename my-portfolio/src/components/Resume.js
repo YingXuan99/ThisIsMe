@@ -18,7 +18,7 @@ function Resume() {
     };
 
     return (
-        <div className="container mt-4">
+        <div className="resume-content">
             <div className="row mb-2">
                 <div className="col-12 text-center">
                     <h1 className="Title software">My Resume</h1>
@@ -41,7 +41,7 @@ function Resume() {
                 <div className="col-12">
                     <div className="pdf-container">
                         <iframe
-                            src={`${resumePdfPath}#view=FitH&zoom=90`} /* Added zoom parameter */
+                            src={`${resumePdfPath}#view=FitH&zoom=90`}
                             title="Resume PDF"
                             className="resume-pdf"
                             width="100%"

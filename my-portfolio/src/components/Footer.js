@@ -4,7 +4,7 @@ function Footer() {
     const currentYear = new Date().getFullYear();
 
     return (
-        <div className="row footer-container mt-5">
+        <div className="row footer-container">
             <div className="col">
                 <nav className="navbar navbar-dark bg-dark navbar-expand-sm navbar-light mx-auto">
                     <div className="container-fluid" style={{ width: '100%' }}>

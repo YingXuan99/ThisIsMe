@@ -2,9 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import AboutMe from './pages/AboutMe';
-import Projects from './pages/Projects';
-import Resume from './pages/Resume';
+import HomePage from './components/HomePage';
 import './App.css';
 
 function App() {
@@ -14,9 +12,7 @@ function App() {
         <Navbar />
         <div className="content-container">
           <Routes>
-            <Route path="/" element={<AboutMe />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/resume" element={<Resume />} />
+            <Route path="/" element={<HomePage />} />
           </Routes>
         </div>
         <Footer />

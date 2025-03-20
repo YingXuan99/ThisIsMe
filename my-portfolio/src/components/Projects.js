@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
@@ -83,7 +82,7 @@ function Projects() {
     ];
 
     return (
-        <div className="container mt-3">
+        <div className="projects-content">
             <div className="row mb-4">
                 <div className="col-12 text-center">
                     <h1 className="Title data">My Projects</h1>

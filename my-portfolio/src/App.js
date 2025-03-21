@@ -8,7 +8,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/my-portfolio">
       <div className="container-fluid p-0" id="app">
         <MatrixBackground /> {/* Add the Matrix background */}
         <Navbar />

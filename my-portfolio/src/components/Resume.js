@@ -3,8 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 function Resume() {
-    // Path to your resume PDF file (store it in your public folder)
-    const resumePdfPath = '/Ying_Xuan_Resume.pdf';
+    // Use PUBLIC_URL to ensure paths work in both development and production
+    const resumePdfPath = `${process.env.PUBLIC_URL}/Ying_Xuan_Resume.pdf`;
 
     // Function to handle the download
     const handleDownload = () => {

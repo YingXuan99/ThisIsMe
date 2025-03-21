@@ -37,7 +37,7 @@ function Navbar() {
                         </div>
                     </div>
                 </nav>
-                <hr className="m-b-0 mt-0" />
+                <hr className="mb-0 mt-0" />
             </div>
         </div>
     );

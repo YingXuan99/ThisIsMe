@@ -3,12 +3,14 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import HomePage from './components/HomePage';
+import MatrixBackground from './components/MatrixBackground'; // Import the new component
 import './App.css';
 
 function App() {
   return (
     <Router>
       <div className="container-fluid p-0" id="app">
+        <MatrixBackground /> {/* Add the Matrix background */}
         <Navbar />
         <div className="content-container">
           <Routes>

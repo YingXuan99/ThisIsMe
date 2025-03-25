@@ -84,18 +84,18 @@ function Projects() {
             "By implementing SVM classifiers in the final network layer instead of traditional softmax layers, the model achieved improved accuracy. The system provides art galleries, and digital marketplaces with a powerful tool to verify artwork integrity and combat increasingly sophisticated digital forgeries."],
             imageUrl: project2Image,
             technologies: ["Python", "Tensorflow", "OpenCV", "ResNet", "SVM"],
-            githubUrl: "https://github.com/yourusername/object-detector",
-            liveUrl: "https://object-detector-demo.example.com"
+            githubUrl: "https://github.com/YingXuan99/ArtworkDeepFakeDetection",
+            liveUrl: null
         },
-        {
-            id: 3,
-            title: "Interactive Data Dashboard",
-            description: "A React-based dashboard visualizing complex datasets. Features interactive charts, filters, and data exploration tools to help users gain insights from structured and unstructured data.",
-            imageUrl: "https://via.placeholder.com/300x200",  // Replace with your image path
-            technologies: ["React", "D3.js", "JavaScript", "Node.js"],
-            githubUrl: "https://github.com/yourusername/data-dashboard",
-            liveUrl: "https://data-dashboard-demo.example.com"
-        }
+        // {
+        //     id: 3,
+        //     title: "Interactive Data Dashboard",
+        //     description: "A React-based dashboard visualizing complex datasets. Features interactive charts, filters, and data exploration tools to help users gain insights from structured and unstructured data.",
+        //     imageUrl: "https://via.placeholder.com/300x200",  // Replace with your image path
+        //     technologies: ["React", "D3.js", "JavaScript", "Node.js"],
+        //     githubUrl: "https://github.com/yourusername/data-dashboard",
+        //     liveUrl: "https://data-dashboard-demo.example.com"
+        // }
     ];
 
     return (

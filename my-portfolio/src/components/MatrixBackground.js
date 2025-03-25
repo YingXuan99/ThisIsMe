@@ -24,7 +24,7 @@ const MatrixBackground = () => {
         // Array to store column positions and their speeds
         const columns = [];
         // Reduce the density by increasing the spacing between columns
-        const columnSpacing = 35; // Increased from 20 to remove vertical lines effect
+        const columnSpacing = 15; // Increased from 20 to remove vertical lines effect
         const columnCount = Math.floor(canvas.width / columnSpacing);
 
         // Initialize columns
@@ -35,7 +35,7 @@ const MatrixBackground = () => {
             columns[i] = {
                 x: xPos,
                 y: Math.random() * -500, // Start above the canvas at random positions
-                speed: 2 + Math.random() * 1, // Random speed
+                speed: 3 + Math.random() * 1, // Random speed
                 length: 10 + Math.random() * 30, // Random length of trail
                 chars: [] // Will hold characters for this column
             };
@@ -52,7 +52,7 @@ const MatrixBackground = () => {
                 const randomIndex = Math.floor(Math.random() * column.chars.length);
                 column.chars[randomIndex] = charArray[Math.floor(Math.random() * charArray.length)];
             });
-        }, 10);
+        }, 20);
 
         // Animation function
         const draw = () => {
@@ -73,7 +73,7 @@ const MatrixBackground = () => {
                 // If column is off-screen, reset it
                 if (column.y > canvas.height + column.length * 20) {
                     column.y = Math.random() * -500;
-                    column.speed = 0.5 + Math.random() * 1;
+                    column.speed = 3 + Math.random() * 1;
                 }
 
                 // Draw each character in the column

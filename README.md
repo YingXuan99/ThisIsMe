@@ -1,6 +1,6 @@
 # Ying Xuan's Portfolio Website
 
-![Matrix Background Preview](/my-portfolio/src/images/preview.png)
+![Matrix Background Preview](/my-portfolio/src/images/preview.gif)
 
 ## 📋 Overview
 

@@ -8,7 +8,7 @@ This is my personal portfolio website built with React, showcasing my projects, 
 
 ## 🔗 Live Website
 
-Visit my portfolio at: [portfolio-link.com](https://yingxuan99.github.io/ThisIsMe/)
+Visit my portfolio at: [ThisIsMe](https://yingxuan99.github.io/ThisIsMe/)
 
 ## 🛠️ Built With
 

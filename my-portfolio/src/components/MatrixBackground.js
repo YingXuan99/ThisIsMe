@@ -35,7 +35,7 @@ const MatrixBackground = () => {
             columns[i] = {
                 x: xPos,
                 y: Math.random() * -500, // Start above the canvas at random positions
-                speed: 3 + Math.random() * 1, // Random speed
+                speed: 1 + Math.random() * 1, // Random speed
                 length: 10 + Math.random() * 30, // Random length of trail
                 chars: [] // Will hold characters for this column
             };
@@ -73,7 +73,7 @@ const MatrixBackground = () => {
                 // If column is off-screen, reset it
                 if (column.y > canvas.height + column.length * 20) {
                     column.y = Math.random() * -500;
-                    column.speed = 3 + Math.random() * 1;
+                    column.speed = 1 + Math.random() * 1;
                 }
 
                 // Draw each character in the column

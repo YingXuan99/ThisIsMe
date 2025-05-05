@@ -6,6 +6,7 @@ import { faExternalLinkAlt, faFilePowerpoint } from '@fortawesome/free-solid-svg
 // You'll need to import your project images
 import project1Image from '../images/project1.png';
 import project2Image from '../images/project2.png';
+import project3Image from '../images/project3.png';
 // import project3Image from '../images/project3.jpg';
 
 function ProjectCard({ title, description, imageUrl, technologies, githubUrl, liveUrl, presentationUrl }) {
@@ -87,15 +88,16 @@ function Projects() {
             githubUrl: "https://github.com/YingXuan99/ArtworkDeepFakeDetection",
             liveUrl: null
         },
-        // {
-        //     id: 3,
-        //     title: "Interactive Data Dashboard",
-        //     description: "A React-based dashboard visualizing complex datasets. Features interactive charts, filters, and data exploration tools to help users gain insights from structured and unstructured data.",
-        //     imageUrl: "https://via.placeholder.com/300x200",  // Replace with your image path
-        //     technologies: ["React", "D3.js", "JavaScript", "Node.js"],
-        //     githubUrl: "https://github.com/yourusername/data-dashboard",
-        //     liveUrl: "https://data-dashboard-demo.example.com"
-        // }
+        {
+            id: 3,
+            title: "Ray Of Hope Dashboard",
+            description: [
+            "The interactive dashboard, built with D3.js and React, enables stakeholders to analyze year-over-year platform performance and compare metrics against competing platforms like Give2Children (G2C). Users can toggle between different data views including campaign completion status, outlier exclusion, and categorical breakdowns through an intuitive interface. Dashboard helps track campaign effectiveness, success rates, and category-specific performance trends YoY. The data is webscrapped from RoH & G2C's websites using BeautifulSoup, before being process and displayed on the dashboard"],
+            imageUrl: project3Image, 
+            technologies: ["React", "D3.js", "JavaScript", "BeautifulSoup"],
+            githubUrl: "https://github.com/YingXuan99/RoH_Analysis",
+            liveUrl: "https://yingxuan99.github.io/RoH_Analysis/"
+        }
     ];
 
     return (
